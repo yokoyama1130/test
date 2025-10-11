@@ -1,21 +1,30 @@
 import 'package:flutter/material.dart';
 
-// flutterのmain関数
 void main() {
   final col = Column(
-    // mainAxisAlignment: MainAxisAlignment.center,
-    // crossAxisAlignment: CrossAxisAlignment.center,
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,
     mainAxisSize: MainAxisSize.min,
     children: const [
       Text('レモン'),
-      Text('りんご'),
+      Text('リンゴ'),
       Text('ブドウ'),
-  ]);
+    ],
+  );
+
+  final row = Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      col, col, col
+    ],
+  );
 
   final a = MaterialApp(
               home: Scaffold(
                 body: Center(
-                  child: col,
+                  child: row,
                 ),
               ),
             );
