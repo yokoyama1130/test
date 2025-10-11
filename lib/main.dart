@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 void main() {
+  // ステートレスウィジェット
+  // ステートフルウィジェット
   final img = Column(
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
