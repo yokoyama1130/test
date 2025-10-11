@@ -4,27 +4,18 @@ void main() {
   final col = Column(
     mainAxisAlignment: MainAxisAlignment.center,
     crossAxisAlignment: CrossAxisAlignment.center,
-    mainAxisSize: MainAxisSize.min,
-    children: const [
-      Text('レモン'),
-      Text('リンゴ'),
-      Text('ブドウ'),
-    ],
-  );
-
-  final row = Row(
-    mainAxisAlignment: MainAxisAlignment.center,
-    crossAxisAlignment: CrossAxisAlignment.center,
-    mainAxisSize: MainAxisSize.min,
+    // mainAxisSize: MainAxisSize.min,
     children: [
-      col, col, col
+      Image.asset(
+        'assets/images/yokohamayakei.jpg',
+      ),
     ],
   );
 
   final a = MaterialApp(
               home: Scaffold(
                 body: Center(
-                  child: row,
+                  child: col,
                 ),
               ),
             );
