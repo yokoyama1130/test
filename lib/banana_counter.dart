@@ -7,13 +7,19 @@ class BananaCounter extends StatelessWidget {
   Widget build(BuildContext context) {
 
     // 横浜の夜景の画像
-    final banana = Image.asset('assets/images/yokohamayakei.jpg',);
+    // final banana = Image.asset('assets/images/yokohamayakei.jpg');
 
     // 数字の部分
-    final text = Text('999');
+    final text = Text(
+      '999',
+      style: const TextStyle(
+        color: Colors.yellow,
+        fontSize: 60,
+      ),
+    );
 
     final row = Row(children: [
-        banana,
+        // banana,
         text,
       ],
     );

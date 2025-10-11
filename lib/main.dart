@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test/banana_counter.dart';
 
 void main() {
   // ステートレスウィジェット
@@ -14,11 +15,13 @@ void main() {
     ],
   );
 
+  final b = BananaCounter();
+
   final con = Container(
 
     color: Colors.deepOrange,
-    // width: 200,
-    // height: 130,
+    width: 200,
+    height: 130,
     alignment: Alignment.center,
     padding: EdgeInsets.all(20),
     child: img,
@@ -27,7 +30,7 @@ void main() {
   final a = MaterialApp(
               home: Scaffold(
                 body: Center(
-                  child: con,
+                  child: b,
                 ),
               ),
             );
